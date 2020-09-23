@@ -4,5 +4,12 @@
     "port": 3306,
     "username": "root",
     "password": "root",
-    "database": "library"
+    "database": "library",
+    "entities": "./src/models/*.ts",
+    "migrations": [
+        "./src/database/migrations/*.ts"
+    ],
+    "cli": {
+        "migrationsDir": "./src/database/migrations"
+    }
  }
