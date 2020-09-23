@@ -5,7 +5,9 @@
     "username": "root",
     "password": "root",
     "database": "library",
-    "entities": "./src/models/*.ts",
+    "entities": [
+        "./src/models/*.ts"
+    ],
     "migrations": [
         "./src/database/migrations/*.ts"
     ],
