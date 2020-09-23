@@ -1,0 +1,14 @@
+version: '3.5'
+services:
+  db:
+    network_mode: host
+    image: mysql:5.7
+    container_name: db_library
+    restart: unless-stopped
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./../../db-library/:/var/lib/mysql
+    environment:
+      - MYSQL_DATABASE=library
+      - MYSQL_ROOT_PASSWORD=root
